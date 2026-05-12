@@ -33,8 +33,8 @@ const paymentLimiter = rateLimit({
 
 // ─── MIDDLEWARE ────────────────────────────────────────
 app.use(cors({
-  origin: "http://localhost:5173", 
-  // origin:"https://veloaurastudio.com",
+  // origin: "http://localhost:5173", 
+  origin:"https://veloaurastudio.com",
   credentials: true,
 }));
 app.use(express.json()); // allows reading JSON from requests
